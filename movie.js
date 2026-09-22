@@ -43,7 +43,7 @@ function showMovies(movies) {
         if (max.value != '' && year > max.value) {
             continue
         }
-        if (score.value != '' && movie.vote_avarage < score.value) {
+        if (score.value != '' && movie.vote_average < score.value) {
             continue
         }
         append.innerHTML += `
