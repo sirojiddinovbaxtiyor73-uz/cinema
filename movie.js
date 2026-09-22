@@ -31,7 +31,8 @@ function getmovies() {
             showMovies(data.results)
         })
     pageText.innerHTML = page
-}
+} 
+
 function showMovies(movies) {
     append.innerHTML = ''
     for (let i = 0; i < movies.length; i++) {
@@ -92,4 +93,5 @@ prev.addEventListener('click', function () {
     page--
     getmovies()
 })
+
 getmovies()
